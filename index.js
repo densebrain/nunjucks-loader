@@ -18,9 +18,6 @@ var jinjaCompatStr;
 var root;
 
 module.exports = function (source) {
-    if (this.target === 'node') {
-        throw new Error('[nunjucks-loader] node targets are not supported');
-    }
 
     this.cacheable();
 
